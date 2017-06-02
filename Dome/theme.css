@@ -66,7 +66,7 @@ table {
 
 .legend{
     margin:0.5em auto auto auto;
-    /*font-size:0.25em;*/
+    font-size:0.75em;
 }
 .filter_box{
     width:90%;
@@ -113,15 +113,17 @@ table {
 }
 #legend-section {
 	width: 15%;
-    min-height:85vh;
-	height:auto;
-	padding-bottom:15vh;
+    height:auto;
+	min-height:87vh;
+
+	padding-bottom:6em;
     position:relative;
     float:left;
     display:inline-block;
     margin:0 0.3em auto 0.2em;
     border:solid;
     border-width:thin;    
+
 }
 #navigation {
 	max-width: 14%;
@@ -190,7 +192,7 @@ font-size:200%;
 margin: 0em auto 0em;
 }
 h4{
-font-size:0.75em;
+font-size:0.7em;
 font-weight:700;
 }
 
@@ -206,6 +208,7 @@ ol, ul {
     overflow-y:scroll;
     max-height:200px; /*http://stackoverflow.com/questions/21998679/css-how-to-make-scrollable-list*/
 	min-height:50px;
+	height:15vh;
 }
 
 section{
