@@ -18,7 +18,7 @@ function reset_layer(){
 		}
 		setQuery(key);
 		checkall_start();
-		show_pc_outline();	
+		//show_pc_outline();	
 	}
 	
 	

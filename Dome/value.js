@@ -19,7 +19,7 @@ var list_of_class = {
 "seifa":{'id':"1qo12KPLSNic8GdSAW3nv-MRvo6Mxcaxm469qLkOs",'ulid':'seifa_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':'checked'},
 "pop_density":{'id':"1U1gDNh7_IVZHtYK02I4Ti2pXdOP2s-wrgySleLfD",'ulid':'pop_density_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
 "popchange_1626":{'id':"1cNvkCThyNLci5TRcm6gLXFl9iZ1u0MDAgAuGjHwV",'ulid':'popchange_1626_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
-"blank_pc_1":{'default':'checked'},
+
 
 };
 
@@ -33,7 +33,7 @@ function layer_pointer(){
 					
 
 					
-					"blank_pc_1":blank_pc_layer1,
+
 					"seifa":seifa_layer,
 					"comp":competitor_layer,
 					"tour_place":tour_place_layer,
