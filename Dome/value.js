@@ -14,7 +14,7 @@ function map_ordering(){
 
 var list_of_class = {
 
-"comp":{'id':"1KIadMXs4gCahoS7p79qWTn14xkVrKIJOKPHjkSfN",'ulid':'comp_list','id_col':'name','name_col':'Name2','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
+"comp":{'id':"1qcqX1gpmTnfjBLdelu8Ld9mswMghdMSuWrZxGdiE",'ulid':'comp_list','id_col':'name','name_col':'Name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
 "tour_place":{'id':"1GpuKRwAMwbKXGdz6FI7rltNbVTLqpaKpVARKakn8",'ulid':'tour_place_list','id_col':'name','name_col':'Name2','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
 "seifa":{'id':"1qo12KPLSNic8GdSAW3nv-MRvo6Mxcaxm469qLkOs",'ulid':'seifa_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':'checked'},
 "pop_density":{'id':"1U1gDNh7_IVZHtYK02I4Ti2pXdOP2s-wrgySleLfD",'ulid':'pop_density_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
