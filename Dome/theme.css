@@ -75,7 +75,8 @@ table {
     margin:auto auto 0 auto;
     position:absolute;
 	bottom:0;
-	height:4em;
+	height:15vh;
+	max-height:4em;
     width: auto;
     padding:0.5em 0.1em 0.5em 0.5em;
     border:solid;
@@ -112,9 +113,9 @@ table {
 }
 #legend-section {
 	width: 15%;
-    min-height:89vh;
+    min-height:85vh;
 	height:auto;
-	padding-bottom:5em;
+	padding-bottom:15vh;
     position:relative;
     float:left;
     display:inline-block;
@@ -225,4 +226,8 @@ span{
 }
 .geoxml3_infowindow br{
 	display: none;
+}
+
+#footnote_text span{
+	word-break: break-all;
 }
