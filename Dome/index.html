@@ -5,9 +5,9 @@
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
-<script type="text/javascript" src="https://nampspectrum.github.io/J5627_NHC/geoxml3.js"></script>  <!-- https://docs.google.com/uc?export=download&id=0B7ae91JhWDOFREVRbUttQTcyTUU -->
-<script type="text/javascript" src="https://nampspectrum.github.io/J5627_NHC/geoxml3_gxParse_kmz.js"></script>  <!-- https://docs.google.com/uc?export=download&id=0B7ae91JhWDOFRWlLOXRJdHpVT1E-->
-<script type="text/javascript" src="https://nampspectrum.github.io/J5627_NHC/ZipFile.complete.js"></script>  <!-- https://docs.google.com/uc?export=download&id=0B7ae91JhWDOFQWJ2bW9DWnpnZW8-->
+<script type="text/javascript" src="https://demonstration-spectrum.github.io/geoxml3.js"></script>  <!-- https://docs.google.com/uc?export=download&id=0B7ae91JhWDOFREVRbUttQTcyTUU -->
+<script type="text/javascript" src="https://demonstration-spectrum.github.io/geoxml3_gxParse_kmz.js"></script>  <!-- https://docs.google.com/uc?export=download&id=0B7ae91JhWDOFRWlLOXRJdHpVT1E-->
+<script type="text/javascript" src="https://demonstration-spectrum.github.io/ZipFile.complete.js"></script>  <!-- https://docs.google.com/uc?export=download&id=0B7ae91JhWDOFQWJ2bW9DWnpnZW8-->
 <script>
 		google.load('visualization', '1', {'packages':['corechart', 'table', 'geomap']}); //this has to be put here to ensure loaded for later functions//or using callback
 </script>
@@ -19,15 +19,14 @@
 
 
 	<section id="legend-section">
-			 <div class="header"><h4>Dome Coffees</h4></div>
+			 <div class="header"><h4>Dome Coffee</h4></div>
 			 <div id="legend">
 			 	  <h4 style=""> LEGEND </h4>
-			 	  <div class="legend"><img src="https://maps.google.com/mapfiles/ms/icons/green-dot.png"><span>Tourist Interested Places</span></div>
+			 	  <div class="legend"><img src="https://maps.google.com/mapfiles/ms/icons/green-dot.png"><span>Tourist Attractions</span></div>
 
-				  <div class="legend"><img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png"><span>Cafe Competitors</span></div>
+				  <div class="legend"><img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png"><span>Competitors</span></div>
 				  <div class="legend">
 				  	   <h4>SEIFA</h4>
-					   <h4>(Socio-Economic Indexes for Areas)</h4>
 					   <svg width="50" height="22">
 					   		  <rect width="45" height="20" style="fill:#0b5394;stroke-width:0;stroke:rgb(0,0,0)" />
 					   </svg>
@@ -81,7 +80,7 @@
 					   <span>Lowest</span>		</br>
 				  </div>
 				  <div class="legend">
-				  	   <h4>Population Change 2016-2026</h4>
+				  	   <h4>Building Approval Change 2016-2026</h4>
 					   <svg width="50" height="22">
 					   		  <rect width="45" height="20" style="fill:#274e13;stroke-width:0;stroke:rgb(0,0,0)" />
 					   </svg>
@@ -117,12 +116,13 @@
 			 <div class= "footnote">
 			   	  <img src="http://www.spectrumanalysis.com.au/uploads/3/1/8/6/31864321/1410756864.jpg">
 				  <div id="footnote_text">
-				  			 	  <span>Â© Spectrum Analysis</span></br>
-				  				  <span>w: www.spectrumanalysis.com.au</span></br>
+				  			 	  <span>© Spectrum Analysis</span></br>
+				  				  <span style="word-break:break-all;">w: spectrumanalysis.com.au</span></br>
 								  <span>p: (03) 9830 0077</span></br>
 								  <span>June 2017</span></br>
 								  <span></span></br>
 				  </div>
+
 			 </div>
 	</section>
 	<section id="map-section">
@@ -131,7 +131,7 @@
 	</section>
 
 	<section id="navigation">
-		<h4><span>Tourist Interested Places</span>
+		<h4><span>Tourist Attractions</span>
 			<span id="checkall" class="button" ul="tour_place_list">Check All</span>
 		</h4>
 		<input type="text" class="filter_box" ul="tour_place_list" placeholder="Search for names..">
@@ -140,7 +140,7 @@
 			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" checked><span class="mar_area button">Albury</span></li> -->
 		      </ul>
 		</form>
-		<h4><span>Cafe Competitors</span>
+		<h4><span>Competitors</span>
 			<span id="checkall" class="button" ul="comp_list">Check All</span>
 		</h4>
 		<input type="text" class="filter_box" id="myInput" ul="comp_list" placeholder="Search for names..">
@@ -169,7 +169,7 @@
 			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" checked><span class="mar_area button">Albury</span></li> -->
 		      </ul>
 		</form>
-		<h4><span>Population Change 2016 - 2016</span>
+		<h4><span>Building Approval Change 2016 - 2016</span>
 			<span id="checkall" class="button" ul="popchange_1626_list">Check All</span>
 		</h4>
 		<input type="text" class="filter_box" id="myInput" ul="popchange_1626_list" placeholder="Search for names..">
@@ -196,20 +196,17 @@
           var competitor_layer;
           function initMap() {
               uluru = {lat: -30.500588, lng: 151.667393};
-              map = new google.maps.Map(document.getElementById('map'), {zoom:12, center: uluru });
+              map = new google.maps.Map(document.getElementById('map'), {zoom:13, center: uluru });
               marker = new google.maps.Marker({position: uluru,  map: null});
 
-        	  seifa_layer = new google.maps.FusionTablesLayer({query: {select: '\'col2\'',from: '1qo12KPLSNic8GdSAW3nv-MRvo6Mxcaxm469qLkOs'}, options: {styleId: 2, templateId: 2}  });
+        	  seifa_layer = new google.maps.FusionTablesLayer({query: {select: '\'col2\'',from: '1ZlgkfhEuvBUI06xkL7INKjRMDYmvSGvm34HESvv2'}, options: {styleId: 2, templateId: 2}  });
         	  seifa_layer.setMap(map);
-        	  pop_density_layer = new google.maps.FusionTablesLayer({query: {select: '\'col2\'',from: '1U1gDNh7_IVZHtYK02I4Ti2pXdOP2s-wrgySleLfD'}, options: {styleId: 2, templateId: 2}  });
+        	  pop_density_layer = new google.maps.FusionTablesLayer({query: {select: '\'col2\'',from: '19rxH6q35L6Z4pSHuAPdlE5SpL6HNphE8uzL3VpuU'}, options: {styleId: 2, templateId: 2}  });
         	  pop_density_layer.setMap(null);
-        	  popchange_1626_layer = new google.maps.FusionTablesLayer({query: {select: '\'col2\'',from: '1cNvkCThyNLci5TRcm6gLXFl9iZ1u0MDAgAuGjHwV'}, options: {styleId: 2, templateId: 2}  });
+        	  popchange_1626_layer = new google.maps.FusionTablesLayer({query: {select: '\'col2\'',from: '1kai9NQQ5Uhsx4WJHlKUJAKpa24TcyFn0zsd4dC8U'}, options: {styleId: 2, templateId: 2}  });
         	  popchange_1626_layer.setMap(null);
 
 
-
-        	  blank_pc_layer1 = new google.maps.FusionTablesLayer({query: {select: '\'col2\'',from: '1XXG6NbTgX5oCQ9bsR0FJu3wUMTSNVBGU5FaAkE2X'}, options: {styleId: 2, templateId: 2}  });
-        	  blank_pc_layer1.setMap(map);
 
 
 
