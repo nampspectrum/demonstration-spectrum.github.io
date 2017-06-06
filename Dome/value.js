@@ -16,9 +16,9 @@ var list_of_class = {
 
 "comp":{'id':"1qcqX1gpmTnfjBLdelu8Ld9mswMghdMSuWrZxGdiE",'ulid':'comp_list','id_col':'name','name_col':'Name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
 "tour_place":{'id':"1GpuKRwAMwbKXGdz6FI7rltNbVTLqpaKpVARKakn8",'ulid':'tour_place_list','id_col':'name','name_col':'Name2','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
-"seifa":{'id':"1qo12KPLSNic8GdSAW3nv-MRvo6Mxcaxm469qLkOs",'ulid':'seifa_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':'checked'},
-"pop_density":{'id':"1U1gDNh7_IVZHtYK02I4Ti2pXdOP2s-wrgySleLfD",'ulid':'pop_density_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
-"popchange_1626":{'id':"1cNvkCThyNLci5TRcm6gLXFl9iZ1u0MDAgAuGjHwV",'ulid':'popchange_1626_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
+"seifa":{'id':"1ZlgkfhEuvBUI06xkL7INKjRMDYmvSGvm34HESvv2",'ulid':'seifa_list','id_col':'name','name_col':'name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':'checked'},
+"pop_density":{'id':"19rxH6q35L6Z4pSHuAPdlE5SpL6HNphE8uzL3VpuU",'ulid':'pop_density_list','id_col':'name','name_col':'name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
+"popchange_1626":{'id':"1kai9NQQ5Uhsx4WJHlKUJAKpa24TcyFn0zsd4dC8U",'ulid':'popchange_1626_list','id_col':'name','name_col':'name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
 
 
 };
