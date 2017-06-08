@@ -15,7 +15,7 @@ function map_ordering(){
 var list_of_class = {
 "mar_area":{'id':"1q0t1tIhDrGOyVLq4P8HU1lbXiQrVSr5X5zffdyjD",'ulid':'mar_area_list','id_col':'name','name_col':'name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':'checked'},
 "comp":{'id':"10FG4AKMLnw5IjeHGLQ28KqBheqKTE3YmKrKyX_P4",'ulid':'comp_list','id_col':'Place_id','name_col':'Name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
-"store_location":{'id':"1b2Nv5t4B-CS3fwkHHVFxJDXFImIwv5NBMJrgvk4O",'ulid':'store_location_list','id_col':'Name','name_col':'Name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
+"store_location":{'id':"1OfjlUvwb2TPrA81JOJUVQD3dYOUq_4L0cNtRw6aW",'ulid':'store_location_list','id_col':'Name','name_col':'Name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
 "seifa":{'id':"1e4IqA448df06v1bWrrN2h9NrThRVrEaky2Uy7ajg",'ulid':'seifa_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
 "pop_density":{'id':"1tKDcENAXfHD7Bk-q6S6hs0n88-z9NFlQpl8NUWb6",'ulid':'pop_density_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
 "building_approval":{'id':"1deeKWARIb3QYbIiwaxvscKg_aFqrmaM8wYvGaOzq",'ulid':'building_approval_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},

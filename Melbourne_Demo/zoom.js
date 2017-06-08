@@ -46,6 +46,10 @@ if (response.isError()) {
 	  	 zoom = 11;
 	  } else if (area > 100){
 	  	 zoom = 12;
+	  }	else if (area > 20){
+	  	 zoom = 13;
+	  }	else if (area > 10){
+	  	 zoom = 14;
 	  }	else if (area > 0){
 	  	 zoom = 15;
 	  } else if (area == 0){
@@ -80,9 +84,13 @@ function zoomTo_latlong(lat,long,area){
 	  	 zoom = 11;
 	  } else if (area > 100){
 	  	 zoom = 12;
-	  }  else if (area > 0){
+	  }	else if (area > 15){
+	  	 zoom = 13;
+	  }	else if (area > 5){
+	  	 zoom = 14;
+	  }	else if (area > 0){
 	  	 zoom = 15;
-	  }    else if (area == 0){
+	  } else if (area == 0){
 	  	 zoom = 20;
 	  }  
 	  //alert('area: '+ area);	
