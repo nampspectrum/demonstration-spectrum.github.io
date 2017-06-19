@@ -234,3 +234,6 @@ span{
 #footnote_text span{
 	word-break: break-all;
 }
+input[type=checkbox] {
+    display: inline;
+}
