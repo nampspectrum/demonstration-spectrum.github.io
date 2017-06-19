@@ -16,17 +16,17 @@ var list_of_class = {
 
 "comp":{'id':"1qcqX1gpmTnfjBLdelu8Ld9mswMghdMSuWrZxGdiE",'ulid':'comp_list','id_col':'name','name_col':'Name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
 "tour_place":{'id':"1GpuKRwAMwbKXGdz6FI7rltNbVTLqpaKpVARKakn8",'ulid':'tour_place_list','id_col':'name','name_col':'Name2','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
-"seifa":{'id':"1ZlgkfhEuvBUI06xkL7INKjRMDYmvSGvm34HESvv2",'ulid':'seifa_list','id_col':'name','name_col':'name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':'checked'},
+"seifa":{'id':"1ZlgkfhEuvBUI06xkL7INKjRMDYmvSGvm34HESvv2",'ulid':'seifa_list','id_col':'name','name_col':'name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
 "pop_density":{'id':"19rxH6q35L6Z4pSHuAPdlE5SpL6HNphE8uzL3VpuU",'ulid':'pop_density_list','id_col':'name','name_col':'name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
 "popchange_1626":{'id':"1kai9NQQ5Uhsx4WJHlKUJAKpa24TcyFn0zsd4dC8U",'ulid':'popchange_1626_list','id_col':'name','name_col':'name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
-
-
+"ucl":{'id':"1Wxyv5LevUm3_8W4Id3qNwWATzxqbkTIUBHxc7xdF",'ulid':'ucl_list','id_col':'name','name_col':'name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':'checked'},
+"road_traffic":{'id':"1wBz2ceoyQ_DMhWqjoeR-WqCR5oLtpbPX4Byl7SH1",'ulid':'road_traffic_list','id_col':'SITE_NO','name_col':'ROAD_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
 };
 
 function layer_pointer(){
    var layer_list = {			
 
-
+					"ucl":ucl_layer,
 					"pop_density":pop_density_layer,
 
 					"popchange_1626":popchange_1626_layer,
@@ -37,7 +37,7 @@ function layer_pointer(){
 					"seifa":seifa_layer,
 					"comp":competitor_layer,
 					"tour_place":tour_place_layer,
-
+					"road_traffic":road_traffic_layer,
 
 					};
    return layer_list;
@@ -47,19 +47,20 @@ function list_pointer(){
    var a_list = {"comp":comp_list,
    	   		  	 "tour_place":tour_place_list,
    	   		  	 "seifa":seifa_list,
-
+				 "road_traffic":road_traffic_list,
 
  				 "pop_density":pop_density_list,
- 				 "popchange_1626":popchange_1626_list,		 						 				 
+ 				 "popchange_1626":popchange_1626_list,
+				 "ucl":ucl_list,
 				 };
    return a_list;
 }
 
 
 
-
+var road_traffic_list = [];
 var comp_list = [];
-
+var ucl_list = [];
 var tour_place_list = [];
 var seifa_list = [];
 var pop_density_list = [];
