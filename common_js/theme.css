@@ -235,5 +235,5 @@ span{
 	word-break: break-all;
 }
 input[type=checkbox] {
-    display: inline;
+    display: inline !important;
 }
