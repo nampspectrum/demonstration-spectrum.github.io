@@ -13,7 +13,7 @@ function map_ordering(){
 }
 
 var list_of_class = {
-"mar_area":{'id':"1q0t1tIhDrGOyVLq4P8HU1lbXiQrVSr5X5zffdyjD",'ulid':'mar_area_list','id_col':'name','name_col':'name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':'checked'},
+"territory":{'id':"18Nifm-lKVVdaZa2J0HXiS-Xu1ncppA783e7lVJdm",'ulid':'territory_list','id_col':'name','name_col':'name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':'checked'},
 "comp":{'id':"10FG4AKMLnw5IjeHGLQ28KqBheqKTE3YmKrKyX_P4",'ulid':'comp_list','id_col':'Place_id','name_col':'Name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
 "store_location":{'id':"1OfjlUvwb2TPrA81JOJUVQD3dYOUq_4L0cNtRw6aW",'ulid':'store_location_list','id_col':'Name','name_col':'Name','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'geoxml','default':'checked'},
 "seifa":{'id':"1e4IqA448df06v1bWrrN2h9NrThRVrEaky2Uy7ajg",'ulid':'seifa_list','id_col':'name','name_col':'LOCALITY_NAME','exception':[],'styleId': 2, 'templateId': 2,'layer_type':'fusion','default':''},
@@ -33,7 +33,7 @@ function layer_pointer(){
 					
 
 					
-					"mar_area":mar_area_layer,
+					"territory":territory_layer,
 					"seifa":seifa_layer,
 					"comp":competitor_layer,
 					"store_location":store_location_layer,
@@ -48,7 +48,7 @@ function list_pointer(){
    	   		  	 "store_location":store_location_list,
    	   		  	 "seifa":seifa_list,
 
-					"mar_area":mar_area_list,
+					"territory":territory_list,
  				 "pop_density":pop_density_list,
  				 "building_approval":building_approval_list,		 						 				 
 				 };
@@ -59,7 +59,7 @@ function list_pointer(){
 
 
 var comp_list = [];
-var mar_area_list = [];
+var territory_list = [];
 var store_location_list = [];
 var seifa_list = [];
 var pop_density_list = [];
@@ -127,6 +127,6 @@ function list_generate(list,ulid,liid,layer_index){
 }
 
 
-//list_generate(mar_area_list,"mar_area_list","mar_area");
+//list_generate(territory_list,"territory_list","territory");
 //list_generate(comp_list,"comp_list","comp");
 //setInterval(map_ordering, 3000);

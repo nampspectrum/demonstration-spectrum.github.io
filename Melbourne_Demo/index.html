@@ -137,7 +137,7 @@
 		<input type="text" class="filter_box" ul="store_location_list" placeholder="Search for names..">
 		<form>
 			  <ul id="store_location_list" class='scroll-box'>
-			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" checked><span class="mar_area button">Albury</span></li> -->
+			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" checked><span class="territory button">Albury</span></li> -->
 		      </ul>
 		</form>
 		<h4><span>Competitors</span>
@@ -146,16 +146,16 @@
 		<input type="text" class="filter_box" id="myInput" ul="comp_list" placeholder="Search for names..">
 		<form>
 			  <ul id="comp_list" class='scroll-box'>
-			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" checked><span class="mar_area button">Albury</span></li> -->
+			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" checked><span class="territory button">Albury</span></li> -->
 		      </ul>
 		</form>
-		<h4><span>Marketing Area</span>
-			<span id="checkall" class="button" ul="mar_area_list">Check All</span>
+		<h4><span>Territory</span>
+			<span id="checkall" class="button" ul="territory_list">Check All</span>
 		</h4>
-		<input type="text" class="filter_box" ul="mar_area_list" placeholder="Search for names..">
+		<input type="text" class="filter_box" ul="territory_list" placeholder="Search for names..">
 		<form>
-			  <ul id="mar_area_list" class='scroll-box'>
-			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" querytype="seifa" checked><span class="mar_area button">Albury</span></li> -->
+			  <ul id="territory_list" class='scroll-box'>
+			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" querytype="seifa" checked><span class="territory button">Albury</span></li> -->
 		      </ul>
 		</form>
 
@@ -165,7 +165,7 @@
 		<input type="text" class="filter_box" ul="seifa_list" placeholder="Search for names..">
 		<form>
 			  <ul id="seifa_list" class='scroll-box'>
-			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" querytype="seifa" checked><span class="mar_area button">Albury</span></li> -->
+			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" querytype="seifa" checked><span class="territory button">Albury</span></li> -->
 		      </ul>
 		</form>
 
@@ -175,7 +175,7 @@
 		<input type="text" class="filter_box" id="myInput" ul="pop_density_list" placeholder="Search for names..">
 		<form>
 			  <ul id="pop_density_list" class='scroll-box'>
-			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" checked><span class="mar_area button">Albury</span></li> -->
+			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" checked><span class="territory button">Albury</span></li> -->
 		      </ul>
 		</form>
 		<h4><span>Building Approval Change 2011 - 2016</span>
@@ -184,7 +184,7 @@
 		<input type="text" class="filter_box" id="myInput" ul="building_approval_list" placeholder="Search for names..">
 		<form>
 			  <ul id="building_approval_list" class='scroll-box'>
-			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" checked><span class="mar_area button">Albury</span></li> -->
+			  	 <!-- SAMPLE <li><input type="checkbox" value="Albury" checked><span class="territory button">Albury</span></li> -->
 		      </ul>
 		</form>
 
@@ -207,8 +207,8 @@
               uluru = {lat: -37.8797358, lng: 145.0440625};
               map = new google.maps.Map(document.getElementById('map'), {zoom:11, center: uluru });
               marker = new google.maps.Marker({position: uluru,  map: null});
-        	  mar_area_layer = new google.maps.FusionTablesLayer({query: {select: '\'col2\'',from: '1q0t1tIhDrGOyVLq4P8HU1lbXiQrVSr5X5zffdyjD'}, options: {styleId: 2, templateId: 2}  });
-        	  mar_area_layer.setMap(map);
+        	  territory_layer = new google.maps.FusionTablesLayer({query: {select: '\'col2\'',from: '18Nifm-lKVVdaZa2J0HXiS-Xu1ncppA783e7lVJdm'}, options: {styleId: 2, templateId: 2}  });
+        	  territory_layer.setMap(map);
 			  
         	  seifa_layer = new google.maps.FusionTablesLayer({query: {select: '\'col2\'',from: '1e4IqA448df06v1bWrrN2h9NrThRVrEaky2Uy7ajg'}, options: {styleId: 2, templateId: 2}  });
         	  seifa_layer.setMap(null);
