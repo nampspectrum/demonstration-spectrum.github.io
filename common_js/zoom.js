@@ -40,7 +40,7 @@ if (response.isError()) {
 	  	 zoom = 8;
 	  }else if (area > 5000){
 	  	 zoom = 9;
-	  }else if (area > 3000){
+	  }else if (area > 2000){
 	  	 zoom = 10;
 	  }else if (area > 1000){
 	  	 zoom = 11;
