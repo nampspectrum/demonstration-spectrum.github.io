@@ -81,7 +81,7 @@ function zoomTo_latlong(lat,long,area){
 	  	 zoom = 9;
 	  }else if (area > 2000){
 	  	 zoom = 10;
-	  }else if (area > 1000){
+	  }else if (area > 300){
 	  	 zoom = 11;
 	  } else if (area > 100){
 	  	 zoom = 12;
